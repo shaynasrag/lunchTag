@@ -26,6 +26,7 @@ class Documents():
     def write_pairs_to_doc(self):
         with open(final_doc, mode = 'w') as lunch_pairs:
             pair_writer = csv.writer(lunch_pairs, delimiter=',', quotechar='"')
+            pair_writer.writerow(["Person 1", "Person 2", "Person 3"])
             self.format_rows()
             for row in self.formatted_rows:
                 pair_writer.writerow(row)
