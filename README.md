@@ -20,7 +20,7 @@ Column 1: Person 1 (the 'sender.' This person is responsible for setting up the 
 
 Column 2: Person 2 (the 'recipient.' This is the person who column 1 will reach out to)
 
-Column 3: Person 3 (only if there are an odd # of submissions
+Column 3: Person 3 (only if there are an odd # of submissions)
 
 ## Usage
 
