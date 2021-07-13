@@ -110,8 +110,7 @@ class People():
         if person.category == "Not Listed/Other" or person.preference == "general":
             self.general_set.add(person)
         else:
-            dictionary = self.set_dicts[person.preference]
-            dictionary[person.category].add(person)
+            self.set_dicts[person.preference][person.category].add(person)
 
 class Person():
     def __init__(self, name, email, category, preference, one_thing):
