@@ -2,7 +2,6 @@ import csv
 import random
 from datetime import date
 from sys import argv
-import os
 
 class Documents():
     def __init__(self, original, final):
@@ -71,12 +70,12 @@ class People():
             curr_person += 2
 
 if __name__ == "__main__":
-    cwd = os.getcwd()
-    original_doc = str(cwd) + "Documents/lunchTag_submissions.csv"
+    original_doc = argv[1]
+    category = argv[2]
 
     today = date.today()
     date = today.strftime("%m-%d-%Y")
-    final_doc = "lunchTag_results-" + date + ".csv"
+    final_doc = category + "-lunch_pairs-" + date + ".csv"
 
     documents = Documents(original_doc, final_doc)
     documents.process()
