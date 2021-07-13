@@ -1,8 +1,11 @@
 # lunchTag
 
 A lunch pair generator for the 2021 summer interns at Intuit, used weekly.
+
 `lunchTag.py` is a basic program that will uses a general file called `lunchTag_submissions.csv` with a similar format to `Interns_lunchTag.py`
+
 `Interns_lunchTag.py` is used for intern-intern matches based on categories.
+
 `FTE_lunchTag.py` is used for intern-full-time-employee matches.
 
 ## Expected Input
