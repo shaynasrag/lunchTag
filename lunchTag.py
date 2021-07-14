@@ -62,8 +62,7 @@ class Person():
         self.email = email
 
 if __name__ == "__main__":
-    cwd = os.getcwd()
-    original_doc = str(cwd) + "lunchTag_submissions.csv"
+    original_doc = argv[1]
 
     today = date.today()
     date = today.strftime("%m-%d-%Y")
