@@ -8,6 +8,10 @@ A lunch pair generator for the 2021 summer interns at Intuit, used weekly.
 
 `FTE_lunchTag.py` is used for intern-full-time-employee matches.
 
+## What are categories?
+
+There are almost 400 interns at Intuit for Summer 2021. When running Lunch Tag for the interns, I asked them to submit forms based on the categories they identified with (General, Design, Product Management, Software Engineering). In this case, I wanted the output files to include the category name so we knew where to look for our results. If you are using one form that doesn't require categories, please use the generic `lunchTag.py` program.
+
 ## Expected Input
 
 ### Interns_lunchTag.py
@@ -49,6 +53,10 @@ Column 3: Person 3 (only if there are an odd # of submissions)
 
 ## Usage
 
+#### lunchTag.py
+
+`python3 lunchTag.py {original document name}`
+
 #### Interns_lunchTag.py
 
 `python3 Interns_lunchTag.py {original document name} {category}`
@@ -58,6 +66,10 @@ Column 3: Person 3 (only if there are an odd # of submissions)
 `python3 FTE_lunchTag.py {original document name}`
 
 ### Output File Name
+
+#### lunchTag.py
+
+`lunchTag_results-{date}.csv`
 
 #### Interns_lunchTag.py
 
