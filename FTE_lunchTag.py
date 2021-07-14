@@ -122,9 +122,7 @@ class Person():
         
 if __name__ == "__main__":
     original_doc = argv[1]
-
     today = date.today()
     formatted_date = today.strftime("%m-%d-%Y")
     final_doc = "FTE-lunch_pairs-" + formatted_date + ".csv"
-
     Documents(original_doc, final_doc).process()
