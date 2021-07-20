@@ -38,7 +38,7 @@ class Documents():
 class People():
     def __init__(self):
         self.num_people = 0
-        self.individual_list = self.pair_list = []
+        self.individual_list, self.pair_list = [], []
 
     def create_pairs(self):
         random.shuffle(self.individual_list)
