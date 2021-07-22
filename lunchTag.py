@@ -2,7 +2,6 @@ import csv
 import random
 from datetime import date
 from sys import argv
-import os
 
 class Documents():
     def __init__(self, original, final):
@@ -30,7 +29,7 @@ class Documents():
             self.formatted_rows.append(row)
 
     def write_rows_to_doc(self):
-        with open(final_doc, mode = 'w') as lunch_pairs:
+        with open(self.final_doc, mode = 'w') as lunch_pairs:
             pair_writer = csv.writer(lunch_pairs, delimiter=',', quotechar='"')
             pair_writer.writerow(["Person 1 (Sender)", "Person 2 (Recipient)", "Person 3 (Recipient)"])
             for row in self.formatted_rows:
@@ -39,7 +38,7 @@ class Documents():
 class People():
     def __init__(self):
         self.num_people = 0
-        self.individual_list = self.pair_list = []
+        self.individual_list, self.pair_list = [], []
 
     def create_pairs(self):
         random.shuffle(self.individual_list)
